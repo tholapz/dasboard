@@ -106,6 +106,32 @@ npm test
 yarn test
 ```
 
+## Deployment
+
+### GitHub Pages Deployment
+
+This project is configured to deploy automatically to GitHub Pages using GitHub Actions.
+
+1. Before your first deployment, you need to:
+   - Replace `USERNAME` in the `homepage` field in `frontend/package.json` with your actual GitHub username
+   - Enable GitHub Pages in your repository settings (Settings > Pages)
+   - Set the source to "GitHub Actions"
+
+2. The deployment will occur automatically when you push to the `main` branch
+
+3. You can also trigger a manual deployment from the Actions tab in your GitHub repository
+
+4. After deployment, your site will be available at: `https://USERNAME.github.io/booking-dashboard`
+
+### Manual Deployment
+
+You can also deploy manually using the gh-pages package:
+
+```bash
+cd frontend
+npm run deploy
+```
+
 ## Future Enhancements
 
 - Backend API integration
